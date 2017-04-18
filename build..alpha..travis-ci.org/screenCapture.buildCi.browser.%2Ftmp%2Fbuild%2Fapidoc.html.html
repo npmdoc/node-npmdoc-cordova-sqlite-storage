@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/litehelpers/Cordova-sqlite-storage"
-
-    >cordova-sqlite-storage (v2.0.3)</a>
+    <a href="https://github.com/litehelpers/Cordova-sqlite-storage">cordova-sqlite-storage (v2.0.3)</a>
 </h1>
 <h4>Native interface to SQLite for PhoneGap/Cordova</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.cordova-sqlite-storage">module cordova-sqlite-storage</a><ol>
 
@@ -99,19 +92,19 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">beforePluginInstall = function (context) {
-    var Q = context.requireCordovaModule(&#x27;q&#x27;);
+    var Q = context.requireCordovaModule('q');
     var deferral = new Q.defer();
 
-    console.log(&#x27;installing external dependencies via npm&#x27;);
+    console.log('installing external dependencies via npm');
 
-    exec(   &#x27;npm install&#x27;, {cwd: path.join(&#x27;plugins&#x27;, package_name)},
+    exec(   'npm install', {cwd: path.join('plugins', package_name)},
             function (error, stdout, stderr) {
                 if (error !== null) {
                     // XXX TODO SIGNAL FAILURE HERE.
-                    console.log(&#x27;npm install of external dependencies failed: &#x27; + error);
+                    console.log('npm install of external dependencies failed: ' + error);
                     deferral.resolve();
                 } else {
-                    console.log(&#x27;npm install of external dependencies ok&#x27;);
+                    console.log('npm install of external dependencies ok');
                     deferral.resolve();
                 }
             }
@@ -137,19 +130,19 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">beforePluginInstall = function (context) {
-    var Q = context.requireCordovaModule(&#x27;q&#x27;);
+    var Q = context.requireCordovaModule('q');
     var deferral = new Q.defer();
 
-    console.log(&#x27;installing external dependencies via npm&#x27;);
+    console.log('installing external dependencies via npm');
 
-    exec(   &#x27;npm install&#x27;, {cwd: path.join(&#x27;plugins&#x27;, package_name)},
+    exec(   'npm install', {cwd: path.join('plugins', package_name)},
             function (error, stdout, stderr) {
                 if (error !== null) {
                     // XXX TODO SIGNAL FAILURE HERE.
-                    console.log(&#x27;npm install of external dependencies failed: &#x27; + error);
+                    console.log('npm install of external dependencies failed: ' + error);
                     deferral.resolve();
                 } else {
-                    console.log(&#x27;npm install of external dependencies ok&#x27;);
+                    console.log('npm install of external dependencies ok');
                     deferral.resolve();
                 }
             }
@@ -169,3 +162,4 @@
     ]
 </div>
 </div>
+</body></html>
