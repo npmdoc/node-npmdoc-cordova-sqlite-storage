@@ -1,6 +1,6 @@
 # npmdoc-cordova-sqlite-storage
 
-#### api documentation for  [cordova-sqlite-storage (v2.0.3)](https://github.com/litehelpers/Cordova-sqlite-storage)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-sqlite-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-sqlite-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-sqlite-storage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-sqlite-storage)
+#### basic api documentation for  [cordova-sqlite-storage (v2.0.3)](https://github.com/litehelpers/Cordova-sqlite-storage)  [![npm package](https://img.shields.io/npm/v/npmdoc-cordova-sqlite-storage.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-cordova-sqlite-storage) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-cordova-sqlite-storage.svg)](https://travis-ci.org/npmdoc/node-npmdoc-cordova-sqlite-storage)
 
 #### Native interface to SQLite for PhoneGap/Cordova
 
@@ -71,7 +71,8 @@
     "scripts": {
         "start": "node scripts/prepareSpec.js"
     },
-    "version": "2.0.3"
+    "version": "2.0.3",
+    "bin": {}
 }
 ```
 
