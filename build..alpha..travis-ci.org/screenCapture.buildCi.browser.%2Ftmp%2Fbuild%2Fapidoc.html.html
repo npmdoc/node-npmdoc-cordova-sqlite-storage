@@ -54,105 +54,12 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.cordova-sqlite-storage">module cordova-sqlite-storage</a><ol>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.cordova-sqlite-storage.beforePluginInstall">
-            function <span class="apidocSignatureSpan">cordova-sqlite-storage.</span>beforePluginInstall
-            <span class="apidocSignatureSpan">(context)</span>
-            </a>
-
-        </li>
-
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-sqlite-storage.beforePluginInstall">module cordova-sqlite-storage.beforePluginInstall</a><ol>
-
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.cordova-sqlite-storage.beforePluginInstall.beforePluginInstall">
-            function <span class="apidocSignatureSpan">cordova-sqlite-storage.</span>beforePluginInstall
-            <span class="apidocSignatureSpan">(context)</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.cordova-sqlite-storage" id="apidoc.module.cordova-sqlite-storage">module cordova-sqlite-storage</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.cordova-sqlite-storage.beforePluginInstall" id="apidoc.element.cordova-sqlite-storage.beforePluginInstall">
-        function <span class="apidocSignatureSpan">cordova-sqlite-storage.</span>beforePluginInstall
-        <span class="apidocSignatureSpan">(context)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">beforePluginInstall = function (context) {
-    var Q = context.requireCordovaModule('q');
-    var deferral = new Q.defer();
-
-    console.log('installing external dependencies via npm');
-
-    exec(   'npm install', {cwd: path.join('plugins', package_name)},
-            function (error, stdout, stderr) {
-                if (error !== null) {
-                    // XXX TODO SIGNAL FAILURE HERE.
-                    console.log('npm install of external dependencies failed: ' + error);
-                    deferral.resolve();
-                } else {
-                    console.log('npm install of external dependencies ok');
-                    deferral.resolve();
-                }
-            }
-    );
-
-    return deferral.promise;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.cordova-sqlite-storage.beforePluginInstall" id="apidoc.module.cordova-sqlite-storage.beforePluginInstall">module cordova-sqlite-storage.beforePluginInstall</a></h1>
-
-
-    <h2>
-        <a href="#apidoc.element.cordova-sqlite-storage.beforePluginInstall.beforePluginInstall" id="apidoc.element.cordova-sqlite-storage.beforePluginInstall.beforePluginInstall">
-        function <span class="apidocSignatureSpan">cordova-sqlite-storage.</span>beforePluginInstall
-        <span class="apidocSignatureSpan">(context)</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">beforePluginInstall = function (context) {
-    var Q = context.requireCordovaModule('q');
-    var deferral = new Q.defer();
-
-    console.log('installing external dependencies via npm');
-
-    exec(   'npm install', {cwd: path.join('plugins', package_name)},
-            function (error, stdout, stderr) {
-                if (error !== null) {
-                    // XXX TODO SIGNAL FAILURE HERE.
-                    console.log('npm install of external dependencies failed: ' + error);
-                    deferral.resolve();
-                } else {
-                    console.log('npm install of external dependencies ok');
-                    deferral.resolve();
-                }
-            }
-    );
-
-    return deferral.promise;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
 
 </div>
 
